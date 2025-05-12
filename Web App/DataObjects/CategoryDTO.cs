@@ -8,5 +8,8 @@ namespace DataObjects
 {
     public class CategoryDTO
     {
+        public int Id { get; set; }
+        public string CatagoryName { get; set; } = string.Empty;
+        public int OrderId { get; set; }
     }
 }
