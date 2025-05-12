@@ -8,5 +8,6 @@ namespace BusinessLayer.InterfaceBLL
 {
     public interface ICategoryBLL
     {
+        public string AddCategory();
     }
 }
