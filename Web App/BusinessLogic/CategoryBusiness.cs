@@ -1,5 +1,4 @@
 ﻿using BusinessLogic.Interface;
-using DataAccess.DataEntities;
 using DataAccess.Interface;
 using DataObjects;
 using System;
@@ -25,7 +24,7 @@ namespace BusinessLogic
                  {
                     Id = c.Id,
                     CatagoryName = c.CategoryName,
-                    OrderId = c.DisplayOrder
+                    DisplayOrder = c.DisplayOrder
                  }).ToList();
             return catagoryDTO;
         }

@@ -10,6 +10,6 @@ namespace DataObjects
     {
         public int Id { get; set; }
         public string CatagoryName { get; set; } = string.Empty;
-        public int OrderId { get; set; }
+        public int DisplayOrder { get; set; }
     }
 }
