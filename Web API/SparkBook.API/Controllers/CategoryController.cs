@@ -13,8 +13,8 @@ namespace SparkBook.API.Controllers
         {
             _category = category;
         }
-        [HttpGet]
-        public IActionResult getCategory() 
+        [HttpGet("GetAllCategory")]
+        public IActionResult GetCategory() 
         {
             var catagories = _category.GetCategories();
             return Ok(catagories);

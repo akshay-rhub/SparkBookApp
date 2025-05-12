@@ -1,9 +1,27 @@
+using BusinessLogic;
+using BusinessLogic.Interface;
+using SparkBook.UI.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAutoMapper(typeof(ModelMapper));
+
+//Dependency Injection
+builder.Services.AddScoped<ICategory, CategoryService>();
+
+
+builder.Services.AddHttpClient<ICategory, CategoryService>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["APIurl:BaseURl"]);
+    client.DefaultRequestHeaders.Add("Accept", "application/json");
+});
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -17,7 +35,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllerRoute(

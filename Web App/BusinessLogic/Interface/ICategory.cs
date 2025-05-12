@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interface
 {
-    public interface ICategoryBusiness
+    public interface ICategory
     {
-        public List<CategoryDTO> GetCategories();
+        public Task<List<CategoryDTO>> GetCategories();
     }
 }

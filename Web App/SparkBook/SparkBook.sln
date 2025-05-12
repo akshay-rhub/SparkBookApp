@@ -5,11 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkBook.UI", "SparkBook.UI.csproj", "{4D2C0CCA-3C5D-4239-8FE0-D5E2B6A429BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic.csproj", "{6B59D3BB-EBAC-4C33-B4A6-40F2BE12C703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic.csproj", "{6B59D3BB-EBAC-4C33-B4A6-40F2BE12C703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataObjects", "..\DataObjects\DataObjects.csproj", "{FA1CB6DA-A630-4ACB-B52B-EC2D4A44DB96}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{2CCACAFC-FB84-4804-AD3E-2E4AC02D7DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataObjects", "..\DataObjects\DataObjects.csproj", "{FA1CB6DA-A630-4ACB-B52B-EC2D4A44DB96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{FA1CB6DA-A630-4ACB-B52B-EC2D4A44DB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA1CB6DA-A630-4ACB-B52B-EC2D4A44DB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA1CB6DA-A630-4ACB-B52B-EC2D4A44DB96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CCACAFC-FB84-4804-AD3E-2E4AC02D7DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CCACAFC-FB84-4804-AD3E-2E4AC02D7DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CCACAFC-FB84-4804-AD3E-2E4AC02D7DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CCACAFC-FB84-4804-AD3E-2E4AC02D7DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
