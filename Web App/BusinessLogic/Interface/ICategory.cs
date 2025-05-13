@@ -9,6 +9,6 @@ namespace BusinessLogic.Interface
 {
     public interface ICategory
     {
-        public Task<List<CategoryDTO>> GetCategories();
+        public Task<List<CategoryViewModel>> GetCategories();
     }
 }

@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
+using BusinessLogic.APIModels;
 using DataObjects;
-using SparkBook.Models;
 
-namespace SparkBook.UI.Services
+namespace DataObjects.Services
 {
     public class ModelMapper : Profile
     {
         public ModelMapper()
         {
-            CreateMap<Category, CategoryDTO>().ReverseMap();
+            CreateMap<CategoryAPIModel, CategoryViewModel>().ReverseMap();
         }
 
     }

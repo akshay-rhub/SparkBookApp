@@ -16,4 +16,8 @@
     <ProjectReference Include="..\DataObjects\DataObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
